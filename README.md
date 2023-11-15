@@ -27,6 +27,7 @@
    ```bash
    docker-compose run php php artisan db:seed
    ```
+    - This seeder will generate example users and tasks in DB, all seeded users will have 'seed_pass' password.
 7. Generate OpenAPI specification:
    ```bash
    docker-compose run php php artisan openapi:generate
