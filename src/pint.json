@@ -1,0 +1,11 @@
+{
+    "preset": "psr12",
+    "rules": {
+        "declare_strict_types": true,
+        "new_with_parentheses": false
+    },
+    "exclude": [
+        "vendor",
+        "tests/Support/_generated"
+    ]
+}

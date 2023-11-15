@@ -1,0 +1,13 @@
+actor: ApiTester
+suite_namespace: Tests\Api
+modules:
+  enabled:
+    - REST:
+        url: /api/
+        depends: Laravel
+    - Laravel:
+        environment_file: .env.testing
+        run_database_migrations: true
+        run_database_seeder: false
+        database_seeder_class: TestDbSeeder
+        cleanup: true
